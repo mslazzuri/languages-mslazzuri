@@ -1,5 +1,6 @@
 /* General Styles */
-body {
+body
+{
     background-color: #212529; /* Very Dark Gray */
     color: #adb5bd; /* Light Gray for general text */
     font-family: Arial, sans-serif; /* A clean, readable font */
