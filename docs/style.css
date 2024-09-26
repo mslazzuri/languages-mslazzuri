@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    background-color: #212529; /* Very Dark Gray */
+    color: #adb5bd; /* Light Gray for general text */
+    font-family: Arial, sans-serif; /* A clean, readable font */
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.quiz-header {
+    font-size: 36px; /* Increased font size for the header */
+    color: #f8f9fa; /* Light color for header text */
+    margin-bottom: 20px; /* Space below the header */
+    text-align: center; /* Center align text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+    max-width: 780px; /* Increased container width */
+    padding: 26px; /* Increased padding */
+    background: #343a40; /* Dark Slate Gray for container */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Question Styles */
+#question {
+    font-size: 28px; /* Increased font size for the question */
+    color: #f8f9fa; /* Light color for question text */
+    margin-bottom: 20px; /* Space below the question */
+    padding: 15px; /* Padding around the question text */
+}
+
+/* Button Styles */
+button {
+    margin: 13px; /* Increased margin */
+    padding: 13px 26px; /* Increased padding */
+    background-color: #495057; /* Dark Gray for buttons */
+    color: white; /* White text on buttons */
+    border: none; /* No border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 18px; /* Increased font size for buttons */
+}
+
+button:hover {
+    background-color: #6c757d; /* Light Gray on hover */
+}
+
+/* Feedback and Lives Counter */
+#feedback {
+    margin-top: 26px; /* Increased margin */
+    font-size: 24px; /* Increased font size for feedback */
+    color: #6c757d; /* Light Gray for feedback text */
+}
+
+#lives {
+    color: #adb5bd; /* Light Gray for lives counter */
+    font-size: 24px; /* Increased font size for lives counter */
+}
+
+/* Centering the Next Question Button */
+#next {
+    display: block;
+    margin: 26px auto; /* Increased margin */
+    font-size: 20px; /* Increased font size */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 90%; /* Responsive width for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width buttons on smaller screens */
+    }
+}

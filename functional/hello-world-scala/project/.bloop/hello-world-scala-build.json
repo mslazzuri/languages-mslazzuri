@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "hello-world-scala-build",
-        "directory": "/workspaces/languages-wmacevoy/functional/hello-world-scala/project",
-        "workspaceDir": "/workspaces/languages-wmacevoy/functional/hello-world-scala/project",
+        "directory": "/workspaces/languages-mslazzuri/functional/hello-world-scala/project",
+        "workspaceDir": "/workspaces/languages-mslazzuri/functional/hello-world-scala/project",
         "sources": [
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/src/main/scala",
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/src/main/scala-2.12",
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/src/main/scala-2",
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/src/main/java",
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/src/main/scala-sbt-1.0",
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/src/main/scala",
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/src/main/scala-2.12",
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/src/main/scala-2",
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/src/main/java",
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/src/main/scala-sbt-1.0",
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -105,11 +105,11 @@
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar"
         ],
-        "out": "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/.bloop/hello-world-scala-build",
-        "classesDir": "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/.bloop/hello-world-scala-build/scala-2.12/sbt-1.0/classes",
+        "out": "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/.bloop/hello-world-scala-build",
+        "classesDir": "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/.bloop/hello-world-scala-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/src/main/resources",
-            "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/src/main/resources",
+            "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -216,7 +216,7 @@
             "config": {
                 "home": "/usr/lib/jvm/msopenjdk-current",
                 "options": [
-                    "-Duser.dir=/workspaces/languages-wmacevoy/functional/hello-world-scala/project"
+                    "-Duser.dir=/workspaces/languages-mslazzuri/functional/hello-world-scala/project"
                 ]
             },
             "mainClass": [
@@ -225,11 +225,11 @@
             "runtimeConfig": {
                 "home": "/usr/lib/jvm/msopenjdk-current",
                 "options": [
-                    "-Duser.dir=/workspaces/languages-wmacevoy/functional/hello-world-scala/project"
+                    "-Duser.dir=/workspaces/languages-mslazzuri/functional/hello-world-scala/project"
                 ]
             },
             "classpath": [
-                "/workspaces/languages-wmacevoy/functional/hello-world-scala/project/.bloop/hello-world-scala-build/scala-2.12/sbt-1.0/classes",
+                "/workspaces/languages-mslazzuri/functional/hello-world-scala/project/.bloop/hello-world-scala-build/scala-2.12/sbt-1.0/classes",
                 "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.6.0/sbt-bloop_2.12_1.0-1.6.0.jar",
                 "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.0.2/bloop-config_2.12-2.0.2.jar",
                 "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.4.0/jsoniter-scala-core_2.12-2.4.0.jar",
