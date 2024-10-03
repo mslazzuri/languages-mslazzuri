@@ -2,50 +2,39 @@
     "version": "1.4.0",
     "project": {
         "name": "root-test",
-        "directory": "/workspaces/languages-mslazzuri/functional/hello-world-scala",
-        "workspaceDir": "/workspaces/languages-mslazzuri/functional/hello-world-scala",
+        "directory": "/workspaces/languages-wmacevoy/functional/hello-world-scala",
+        "workspaceDir": "/workspaces/languages-wmacevoy/functional/hello-world-scala",
         "sources": [
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/src/test/scala",
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/src/test/scala-2.13",
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/src/test/scala-2",
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/src/test/java",
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/target/scala-2.13/src_managed/test"
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/src/test/scala",
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/src/test/scala-2.13",
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/src/test/scala-2",
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/src/test/java",
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/target/scala-2.13/src_managed/test"
         ],
         "dependencies": [
             "root"
         ],
         "classpath": [
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/.bloop/root/scala-2.13/classes",
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/.bloop/root/scala-2.13/classes",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.9.0-M2/akka-actor-typed_2.13-2.9.0-M2.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.6.0-M1/akka-http_2.13-10.6.0-M1.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.9.0-M2/akka-stream_2.13-2.9.0-M2.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.13/0.14.1/circe-core_2.13-0.14.1.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.13/0.14.1/circe-generic_2.13-0.14.1.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_2.13/0.14.1/circe-parser_2.13-0.14.1.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-literal_2.13/0.14.1/circe-literal_2.13-0.14.1.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.9.0-M2/akka-actor_2.13-2.9.0-M2.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.9.0-M2/akka-slf4j_2.13-2.9.0-M2.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.6.0-M1/akka-http-core_2.13-10.6.0-M1.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf-v3_2.13/2.9.0-M2/akka-protobuf-v3_2.13-2.9.0-M2.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.13/0.14.1/circe-numbers_2.13-0.14.1.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.6.1/cats-core_2.13-2.6.1.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.7/shapeless_2.13-2.3.7.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_2.13/0.14.1/circe-jawn_2.13-0.14.1.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar",
             "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.6.0-M1/akka-parsing_2.13-10.6.0-M1.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.6.1/cats-kernel_2.13-2.6.1.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.13/0.5.4/simulacrum-scalafix-annotations_2.13-0.5.4.jar",
-            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_2.13/1.1.2/jawn-parser_2.13-1.1.2.jar"
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.6.0-M1/akka-parsing_2.13-10.6.0-M1.jar"
         ],
-        "out": "/workspaces/languages-mslazzuri/functional/hello-world-scala/.bloop/root",
-        "classesDir": "/workspaces/languages-mslazzuri/functional/hello-world-scala/.bloop/root/scala-2.13/test-classes",
+        "out": "/workspaces/languages-wmacevoy/functional/hello-world-scala/.bloop/root",
+        "classesDir": "/workspaces/languages-wmacevoy/functional/hello-world-scala/.bloop/root/scala-2.13/test-classes",
         "resources": [
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/src/test/resources",
-            "/workspaces/languages-mslazzuri/functional/hello-world-scala/target/scala-2.13/resource_managed/test"
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/src/test/resources",
+            "/workspaces/languages-wmacevoy/functional/hello-world-scala/target/scala-2.13/resource_managed/test"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -140,7 +129,7 @@
             "config": {
                 "home": "/usr/lib/jvm/msopenjdk-current",
                 "options": [
-                    "-Duser.dir=/workspaces/languages-mslazzuri/functional/hello-world-scala"
+                    "-Duser.dir=/workspaces/languages-wmacevoy/functional/hello-world-scala"
                 ]
             },
             "mainClass": [
@@ -214,74 +203,6 @@
                             "name": "akka-stream_2.13",
                             "classifier": "sources",
                             "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.9.0-M2/akka-stream_2.13-2.9.0-M2-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "io.circe",
-                    "name": "circe-core_2.13",
-                    "version": "0.14.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "circe-core_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.13/0.14.1/circe-core_2.13-0.14.1.jar"
-                        },
-                        {
-                            "name": "circe-core_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.13/0.14.1/circe-core_2.13-0.14.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "io.circe",
-                    "name": "circe-generic_2.13",
-                    "version": "0.14.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "circe-generic_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.13/0.14.1/circe-generic_2.13-0.14.1.jar"
-                        },
-                        {
-                            "name": "circe-generic_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.13/0.14.1/circe-generic_2.13-0.14.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "io.circe",
-                    "name": "circe-parser_2.13",
-                    "version": "0.14.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "circe-parser_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_2.13/0.14.1/circe-parser_2.13-0.14.1.jar"
-                        },
-                        {
-                            "name": "circe-parser_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_2.13/0.14.1/circe-parser_2.13-0.14.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "io.circe",
-                    "name": "circe-literal_2.13",
-                    "version": "0.14.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "circe-literal_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-literal_2.13/0.14.1/circe-literal_2.13-0.14.1.jar"
-                        },
-                        {
-                            "name": "circe-literal_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-literal_2.13/0.14.1/circe-literal_2.13-0.14.1-sources.jar"
                         }
                     ]
                 },
@@ -388,74 +309,6 @@
                     ]
                 },
                 {
-                    "organization": "io.circe",
-                    "name": "circe-numbers_2.13",
-                    "version": "0.14.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "circe-numbers_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.13/0.14.1/circe-numbers_2.13-0.14.1.jar"
-                        },
-                        {
-                            "name": "circe-numbers_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.13/0.14.1/circe-numbers_2.13-0.14.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.typelevel",
-                    "name": "cats-core_2.13",
-                    "version": "2.6.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "cats-core_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.6.1/cats-core_2.13-2.6.1.jar"
-                        },
-                        {
-                            "name": "cats-core_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.6.1/cats-core_2.13-2.6.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "com.chuusai",
-                    "name": "shapeless_2.13",
-                    "version": "2.3.7",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "shapeless_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.7/shapeless_2.13-2.3.7.jar"
-                        },
-                        {
-                            "name": "shapeless_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.7/shapeless_2.13-2.3.7-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "io.circe",
-                    "name": "circe-jawn_2.13",
-                    "version": "0.14.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "circe-jawn_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_2.13/0.14.1/circe-jawn_2.13-0.14.1.jar"
-                        },
-                        {
-                            "name": "circe-jawn_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_2.13/0.14.1/circe-jawn_2.13-0.14.1-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "com.typesafe",
                     "name": "config",
                     "version": "1.4.2",
@@ -503,57 +356,6 @@
                             "name": "akka-parsing_2.13",
                             "classifier": "sources",
                             "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.6.0-M1/akka-parsing_2.13-10.6.0-M1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.typelevel",
-                    "name": "cats-kernel_2.13",
-                    "version": "2.6.1",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "cats-kernel_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.6.1/cats-kernel_2.13-2.6.1.jar"
-                        },
-                        {
-                            "name": "cats-kernel_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.6.1/cats-kernel_2.13-2.6.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.typelevel",
-                    "name": "simulacrum-scalafix-annotations_2.13",
-                    "version": "0.5.4",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "simulacrum-scalafix-annotations_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.13/0.5.4/simulacrum-scalafix-annotations_2.13-0.5.4.jar"
-                        },
-                        {
-                            "name": "simulacrum-scalafix-annotations_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.13/0.5.4/simulacrum-scalafix-annotations_2.13-0.5.4-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.typelevel",
-                    "name": "jawn-parser_2.13",
-                    "version": "1.1.2",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "jawn-parser_2.13",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_2.13/1.1.2/jawn-parser_2.13-1.1.2.jar"
-                        },
-                        {
-                            "name": "jawn-parser_2.13",
-                            "classifier": "sources",
-                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_2.13/1.1.2/jawn-parser_2.13-1.1.2-sources.jar"
                         }
                     ]
                 },
