@@ -1,86 +1,99 @@
 /* General Styles */
 body
 {
-    background-color: #212529; /* Very Dark Gray */
-    color: #adb5bd; /* Light Gray for general text */
-    font-family: Arial, sans-serif; /* A clean, readable font */
-    display: flex; /* Use Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
-    flex-direction: column; /* Stack elements vertically */
+    background-color: #212529;
+    color: #adb5bd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
 }
 
-.quiz-header {
-    font-size: 36px; /* Increased font size for the header */
-    color: #f8f9fa; /* Light color for header text */
-    margin-bottom: 20px; /* Space below the header */
-    text-align: center; /* Center align text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+/* Interactive Quiz */
+.quiz-header
+{
+    font-size: 36px;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Quiz Container Styles */
-.quiz-container {
-    max-width: 780px; /* Increased container width */
-    padding: 26px; /* Increased padding */
-    background: #343a40; /* Dark Slate Gray for container */
+/* Box where question an alternatives are in */
+.quiz-container
+{
+    max-width: 780px;
+    padding: 26px;
+    background: #343a40;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Question Styles */
-#question {
-    font-size: 28px; /* Increased font size for the question */
-    color: #f8f9fa; /* Light color for question text */
-    margin-bottom: 20px; /* Space below the question */
-    padding: 15px; /* Padding around the question text */
+/* Question style - "What is the capital of France?" */
+#question
+{
+    font-size: 28px;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+    padding: 15px;
 }
 
-/* Button Styles */
-button {
-    margin: 13px; /* Increased margin */
-    padding: 13px 26px; /* Increased padding */
-    background-color: #495057; /* Dark Gray for buttons */
-    color: white; /* White text on buttons */
-    border: none; /* No border for buttons */
-    border-radius: 5px; /* Rounded corners for buttons */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-    font-size: 18px; /* Increased font size for buttons */
+/* Alternatives button style */
+button
+{
+    margin: 13px;
+    padding: 13px 26px;
+    background-color: #495057;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
 }
 
-button:hover {
-    background-color: #6c757d; /* Light Gray on hover */
+button:hover
+{
+    background-color: #6c757d;
 }
 
-/* Feedback and Lives Counter */
-#feedback {
-    margin-top: 26px; /* Increased margin */
-    font-size: 24px; /* Increased font size for feedback */
-    color: #6c757d; /* Light Gray for feedback text */
+/* Feedback */
+#feedback
+{
+    margin-top: 26px;
+    font-size: 24px;
+    color: #6c757d;
 }
 
-#lives {
-    color: #adb5bd; /* Light Gray for lives counter */
-    font-size: 24px; /* Increased font size for lives counter */
+/* Number of lives info */
+#lives
+{
+    color: #adb5bd;
+    font-size: 24px;
 }
 
 /* Centering the Next Question Button */
-#next {
+#next
+{
     display: block;
-    margin: 26px auto; /* Increased margin */
-    font-size: 20px; /* Increased font size */
+    margin: 26px auto;
+    font-size: 20px;
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
-    .quiz-container {
+@media (max-width: 600px)
+{
+    .quiz-container
+    {
         width: 90%; /* Responsive width for smaller screens */
     }
 
-    button {
+    button
+    {
         width: 100%; /* Full width buttons on smaller screens */
     }
 }

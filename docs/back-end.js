@@ -1,4 +1,8 @@
-const quizQuestions = [
+// Back-end file for the logics of the Interactive Quiz.
+// Created by Matheus Lazzuri.
+
+const quizQuestions =
+[
     { question: "What is the capital of France?", options: ["Berlin", "Madrid", "Paris", "Rome"], answer: 2 },
     { question: "What is the largest planet in our solar system?", options: ["Earth", "Jupiter", "Saturn", "Mars"], answer: 1 },
     { question: "What is the world's tallest building?", options: ["Eiffel Tower", "Shangai Tower", "Burj Khalifa", "Empire State"], answer: 2},
@@ -18,7 +22,8 @@ const quizQuestions = [
 let currentQuestion = 0;
 let lives = 2; // Player starts with 2 lives
 
-function displayQuestion() {
+function displayQuestion()
+{
     const questionElement = document.getElementById("question");
     const options = document.querySelectorAll(".option");
     const livesElement = document.getElementById("lives");
@@ -38,12 +43,14 @@ function displayQuestion() {
     nextButton.style.display = "none";
 }
 
-function checkAnswer(selectedIndex) {
+function checkAnswer(selectedIndex)
+{
     const feedback = document.getElementById("feedback");
     const livesElement = document.getElementById("lives");
     const nextButton = document.getElementById("next");
 
-    if (selectedIndex === quizQuestions[currentQuestion].answer) {
+    if (selectedIndex === quizQuestions[currentQuestion].answer)
+    {
         feedback.textContent = "Correct!";
         feedback.style.color = "green";
 
@@ -51,12 +58,15 @@ function checkAnswer(selectedIndex) {
         nextButton.style.display = "block";
 
         // Check if it's the last question
-        if (currentQuestion === quizQuestions.length - 1) {
+        if (currentQuestion === quizQuestions.length - 1)
+        {
             feedback.textContent = "Congratulations! You've won the quiz!";
             nextButton.style.display = "none"; // Hide the next button
             showResetButton(); // Show reset button at the end
         }
-    } else {
+    }
+    else
+    {
         feedback.textContent = "Incorrect!";
         feedback.style.color = "red";
 
@@ -65,14 +75,16 @@ function checkAnswer(selectedIndex) {
         livesElement.textContent = `Lives remaining: ${lives}`;
 
         // Check if player lost all lives
-        if (lives === 0) {
+        if (lives === 0)
+        {
             alert("Game Over! You've lost all your lives.");
             resetGame();
         }
     }
 }
 
-function showResetButton() {
+function showResetButton()
+{
     const resetButton = document.createElement("button");
     resetButton.id = "reset";
     resetButton.textContent = "Reset Quiz";
@@ -88,22 +100,26 @@ function showResetButton() {
     };
 }
 
-function resetGame() {
+function resetGame()
+{
     currentQuestion = 0;
     lives = 2; // Reset lives
     displayQuestion();
     document.getElementById("feedback").textContent = "";
 }
 
-document.getElementById("next").onclick = () => {
+document.getElementById("next").onclick = () =>
+{
     currentQuestion++;
-    if (currentQuestion < quizQuestions.length) {
+    if (currentQuestion < quizQuestions.length)
+    {
         displayQuestion();
         document.getElementById("feedback").textContent = "";
     }
 };
 
 // Start the quiz
-window.onload = function() {
+window.onload = function()
+{
     displayQuestion();  // This ensures that the question appears as soon as the page loads
 };
