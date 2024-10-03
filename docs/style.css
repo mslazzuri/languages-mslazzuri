@@ -15,7 +15,7 @@ body
 /* Interactive Quiz */
 .quiz-header
 {
-    font-size: 36px;
+    font-size: 2.4rem;
     color: #f8f9fa;
     margin-bottom: 20px;
     text-align: center;
@@ -25,8 +25,8 @@ body
 /* Box where question an alternatives are in */
 .quiz-container
 {
-    max-width: 780px;
-    padding: 26px;
+    max-width: 780px; 
+    padding: 30px;
     background: #343a40;
     border-radius: 10px;
     text-align: center;
@@ -36,7 +36,7 @@ body
 /* Question style - "What is the capital of France?" */
 #question
 {
-    font-size: 28px;
+    font-size: 1.6rem;
     color: #f8f9fa;
     margin-bottom: 20px;
     padding: 15px;
@@ -53,7 +53,7 @@ button
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 button:hover
@@ -65,7 +65,7 @@ button:hover
 #feedback
 {
     margin-top: 26px;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #6c757d;
 }
 
@@ -73,7 +73,7 @@ button:hover
 #lives
 {
     color: #adb5bd;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 /* Centering the Next Question Button */
@@ -81,19 +81,23 @@ button:hover
 {
     display: block;
     margin: 26px auto;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 /* Responsive Styles */
 @media (max-width: 600px)
 {
-    .quiz-container
-    {
+    .quiz-container {
         width: 90%; /* Responsive width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
     }
 
-    button
-    {
+    button {
         width: 100%; /* Full width buttons on smaller screens */
+        font-size: 1rem; /* Slightly smaller font size on small screens */
+    }
+
+    .quiz-header, #question, #feedback, #lives, #next {
+        font-size: 1rem; /* Adjust font size for readability */
     }
 }

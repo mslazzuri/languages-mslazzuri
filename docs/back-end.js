@@ -36,6 +36,7 @@ function displayQuestion()
     questionElement.textContent = quizQuestions[currentQuestion].question;
     options.forEach((button, index) => {
         button.textContent = quizQuestions[currentQuestion].options[index];
+        button.disabled = false;
         button.onclick = () => checkAnswer(index);
     });
 
@@ -48,11 +49,16 @@ function checkAnswer(selectedIndex)
     const feedback = document.getElementById("feedback");
     const livesElement = document.getElementById("lives");
     const nextButton = document.getElementById("next");
+    const options = document.querySelectorAll(".option");
 
+    // CORRECT ANSWER
     if (selectedIndex === quizQuestions[currentQuestion].answer)
     {
         feedback.textContent = "Correct!";
         feedback.style.color = "green";
+
+        // Disable all buttons after a correct answer
+        options.forEach(button => button.disabled = true);
 
         // Show the Next button when the answer is correct
         nextButton.style.display = "block";
@@ -65,7 +71,7 @@ function checkAnswer(selectedIndex)
             showResetButton(); // Show reset button at the end
         }
     }
-    else
+    else // WRONG ANSWER
     {
         feedback.textContent = "Incorrect!";
         feedback.style.color = "red";
