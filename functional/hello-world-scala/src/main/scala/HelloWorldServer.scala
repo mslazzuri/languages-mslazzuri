@@ -4,8 +4,14 @@ import akka.actor.typed.ActorSystem
 import akka.actor.typed.scaladsl.Behaviors
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives._
+import de.heikoseeberger.akkahttpcirce.CirceSupport._
+import io.circe.generic.auto._
+import io.circe.syntax._
 
 import scala.io.StdIn
+
+// Case class for the JSON input
+case class StringList(strings: List[String])
 
 object HelloWorldServer {
 
@@ -24,6 +30,15 @@ object HelloWorldServer {
       pathSingleSlash {
         get {
           complete(s"Hello!")
+        }
+      } ~
+      path("sortStrings") {
+        post {
+          entity(as[StringList]) { stringList =>
+            // Sort the list of strings
+            val sortedList = stringList.strings.sorted
+            complete(sortedList.asJson) // Convert the sorted list to JSON
+          }
         }
       }
 
