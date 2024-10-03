@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="quiz-header">Interactive Quiz</h1> <!-- Added header -->
+  <div class="quiz-container">
+    <div id="question">Question will appear here</div>
+    <div id="options">
+      <button class="option">Option 1</button>
+      <button class="option">Option 2</button>
+      <button class="option">Option 3</button>
+      <button class="option">Option 4</button>
+    </div>
+    <div id="feedback"></div>
+    <div id="lives">Lives: 3</div> <!-- Added lives counter -->
+    <button id="next">Next Question</button>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="back-end.js"></script>
+</body>
+</html>
