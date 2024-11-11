@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0m[hello-world-scala-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[hello-world-scala-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'hello-world-scala-build' to '/workspaces/languages-mslazzuri/functional/hello-world-scala/project/.bloop/hello-world-scala-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/hello-world-scala-build.json[0m

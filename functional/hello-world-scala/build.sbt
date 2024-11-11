@@ -8,8 +8,6 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "com.typesafe.akka" %% "akka-actor-typed" % "[2.6,3.0)",  // Allows any version from 2.6.x up to (but not including) 3.0
       "com.typesafe.akka" %% "akka-http"        % "[10.2,11.0)", // Allows any version from 10.2.x up to (but not including) 11.0
-      "com.typesafe.akka" %% "akka-stream"      % "[2.6,3.0)",   // Allows any version from 2.6.x up to (but not including) 3.0
-      "com.typesafe.akka" %% "akka-http-spray-json" % "10.2.10",  // Akka HTTP JSON support
-      "com.typesafe" %% "ssl-config-core" % "0.6.1"  // SSL config core
+      "com.typesafe.akka" %% "akka-stream"      % "[2.6,3.0)"   // Allows any version from 2.6.x up to (but not including) 3.0
     )
   )
