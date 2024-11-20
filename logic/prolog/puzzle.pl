@@ -1,43 +1,21 @@
-% Define the structure: each person has a Name, a Pet, and a House color.
-solution(Solution) :-
-    Solution = [
-        person(_, _, _),
-        person(_, _, _),
-        person(_, _, _),
-        person(_, _, _),
-        person(_, _, _)
-    ],
+% Display the introductory statement
+display_statement :-
+    write('You encounter two natives, A and B. A says: "Either I am a knave or B is a Knight."'), nl,
+    write('I will solve this puzzle...'), nl.
 
-    % Ensure all names are different.
-    member(person(alice, _, _), Solution),
-    member(person(bob, _, _), Solution),
-    member(person(carol, _, _), Solution),
-    member(person(david, _, _), Solution),
-    member(person(eve, _, _), Solution),
+% Define the possible roles
+knight.
+knave.
 
-    % Ensure all pets are different.
-    member(person(_, dog, _), Solution),
-    member(person(_, cat, _), Solution),
-    member(person(_, fish, _), Solution),
-    member(person(_, bird, _), Solution),
-    member(person(_, hamster, _), Solution),
+% A's statement: Either A is a knave or B is a knight
+a_statement(a, b) :- (a = knave ; b = knight).
 
-    % Ensure all house colors are different.
-    member(person(_, _, white), Solution),
-    member(person(_, _, pink), Solution),
-    member(person(_, _, red), Solution),
-    member(person(_, _, yellow), Solution),
-    member(person(_, _, blue), Solution),
-    
-    % Clues:
-
-% Predicate to print the solution in formatted strings
-print_solution([]).
-print_solution([person(Name, Pet, HouseColor) | Rest]) :-
-    format("~w owns the ~w and lives in the ~w house.~n", [Name, Pet, HouseColor]),
-    print_solution(Rest).
-
-% Main predicate to solve and print
-solve :-
-    solution(Solution),
-    print_solution(Solution).
+% Determine the roles of A and B based on A's statement
+determine_roles(A, B) :-
+    display_statement,
+    (   A = knight, \+ a_statement(A, B)  % If A is a knight, their statement must be true
+    ->  write('A is a knight and B is a knight.')
+    ;   A = knave, a_statement(A, B)     % If A is a knave, their statement must be false
+    ->  write('A is a knave and B is a knave.'),
+    !.
+    ).

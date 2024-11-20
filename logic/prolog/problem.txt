@@ -1,0 +1,62 @@
+Knights or Knaves
+-------------------------------------------------------------------------------
+
+DESCRIPTION:
+    In a fictional island, all inhabitants are of one of the two types:
+
+    1. Knights - Always tell the truth.
+    2. Knaves  - Always lie.
+
+PROBLEM:
+    You are in the fictional island and encouter two inhabitants: A and B.
+    A says: "Either I am a knave or B is a knight."
+
+TASK:
+    Using only A's statement, defined if A and B are knigths or knaeves.
+
+REASONING:
+    A says, "Either I am a knave, or B is a knight." Which in other words
+    can be: "Either A is a knave, or B is a knight." Now, if we assume A
+    is a knight (meaning A tells the truth), then A's statement must hold
+    true. Since A is not a knave (assumption), the first part of the statement,
+    "I am a knave," is false. Therefore, for the entire statement to be true,
+    the second part must be true: B must be a knight. So, if A is a knight, B
+    must also be a knight.
+
+    On the other hand, if we assume A is a knave (meaning A lies), then A's
+    statement must be false. This would mean that the negation of "Either A is
+    a knave or B is a knight" should hold. Using logic, this translates to both
+    "A is not a knave" and "B is not a knight." But this leads to a contradic-
+    tion because A is assumed to be a knave, making this scenario inconsistent.
+    Therefore, A cannot be a knave. The only consistent possibility is that both
+    A and B are knights.
+
+PROLOG:
+    A's statement can be translated into prolog with:
+        a_statement :- (a = knave ; b = knight).
+    
+    Inside the predicate determine_roles, we check A's statement with:
+
+    1.  A = knight, \+ a_statement(A, B)
+        
+        Here, we assume that A is a knight:
+        A = knight
+        meaning its statement must be true. Then, we check the negation
+        of its statment:
+        \+ a_statement(A, B)
+        If that evaluates to false, it means that A must be a kight, because his
+        statement is true.
+        So then, we write the message: "A is a knight and B is a knight."
+        B is also knight because A (who tells the truth) said so.
+    
+    2.  A = knave, a_statement(A, B)
+        Here, we assume if A is a knave, meaning its statement must evaluate to
+        false:
+        A = knave
+        Then we check if A's statement evaluates to truth:
+        a_statement(A, B)
+        If it does, there is an inconsistency, since as a knave, A can only tell
+        lies.
+        However, if this evaluates to true, prolog would print the message:
+        "A is a knave and B is a knave."
+
