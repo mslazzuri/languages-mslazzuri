@@ -16,6 +16,5 @@ determine_roles(A, B) :-
     (   A = knight, \+ a_statement(A, B)  % If A is a knight, their statement must be true
     ->  write('A is a knight and B is a knight.')
     ;   A = knave, a_statement(A, B)     % If A is a knave, their statement must be false
-    ->  write('A is a knave and B is a knave.'),
-    !.
+    ->  write('A is a knave and B is a knave.')
     ).
